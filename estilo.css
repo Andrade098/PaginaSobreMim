@@ -139,7 +139,7 @@ header{
 .btn {
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background: #0ef;  /* Cor de fundo do botão */
     border-radius: 40px;
     box-shadow: 0 0 10px #0ef;
     font-size: 16px;
@@ -147,9 +147,11 @@ header{
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
-    opacity: 0;
+    opacity: 1;  /* Certificando que o botão será visível */
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Transições de fundo e cor */
 }
 @keyframes slideRight {
     0%{
