@@ -123,8 +123,8 @@
                     <a href="https://github.com/Andrade098/ProjetoBanco.Java" class="btn-projeto" target="_blank">
                         <i class='bx bxl-github'></i> Código
                     </a>
-                    <a href="#" class="btn-projeto" target="_blank">
-                        <i class='bx bx-link-external'></i> Demo
+                    <a href="#" class="btn-projeto btn-saiba-mais" data-projeto="sistema-bancario">
+                        <i class='bx bx-info-circle'></i> Saiba Mais
                     </a>
                 </div>
             </div>
@@ -157,23 +157,22 @@
                     <a href="https://docs.google.com/document/d/1VqK-bWwCaIc7R8Jrrp1W6yxiFBseVLPEtXyoUJnFitY/edit?usp=sharing" class="btn-projeto" target="_blank">
                         <i class='bx bx-file'></i> Documentação
                     </a>
-                    <a href="#" class="btn-projeto" target="_blank">
-                        <i class='bx bx-link-external'></i> Demo
+                    <a href="#" class="btn-projeto btn-saiba-mais" data-projeto="vetfarm">
+                        <i class='bx bx-info-circle'></i> Saiba Mais
                     </a>
                 </div>
             </div>
         </div>
 
-        <!-- PROJETO 3 - SITE INSTITUCIONAL -->
+        <!-- PROJETO 3 - PITWALL -->
         <div class="projeto-card">
             <div class="projeto-imagem">
-                <img src="pitwall.png" alt="Site Institucional">
+                <img src="pitwall.png" alt="PitWall - Fórmula 1">
                 <span class="badge-solo">🧑‍💻 Projeto solo</span>
             </div>
             <div class="projeto-info">
-                <h3>PitWall - Formula 1</h3>
-                <p class="descricao-curta">Plataforma de monitoramento em tempo real para corridas de Fórmula 1, inspirada no Live Timing do F1TV. Simula dados de corrida com WebSockets, exibindo posições, gaps, pneus, eventos e classificação em tempo real.
-</p>
+                <h3>PitWall - Fórmula 1</h3>
+                <p class="descricao-curta">Plataforma de monitoramento em tempo real para corridas de Fórmula 1, inspirada no Live Timing do F1TV. Simula dados de corrida com WebSockets, exibindo posições, gaps, pneus, eventos e classificação em tempo real.</p>
                 
                 <div class="tech-tags">
                     <span>HTML</span>
@@ -185,8 +184,8 @@
                     <a href="#" class="btn-projeto" target="_blank">
                         <i class='bx bxl-github'></i> Código
                     </a>
-                    <a href="#" class="btn-projeto" target="_blank">
-                        <i class='bx bx-link-external'></i> Demo
+                    <a href="#" class="btn-projeto btn-saiba-mais" data-projeto="pitwall">
+                        <i class='bx bx-info-circle'></i> Saiba Mais
                     </a>
                 </div>
             </div>
@@ -205,6 +204,19 @@
         <button type="submit" class="btn">Enviar</button>
     </form>
 </section>
+
+<!-- ========================================== -->
+<!-- MODAL "SAIBA MAIS" -->
+<!-- ========================================== -->
+<div class="modal" id="modal-projeto">
+    <div class="modal-content">
+        <span class="modal-fechar">&times;</span>
+        <h2 id="modal-titulo">Título do Projeto</h2>
+        <div id="modal-corpo">
+            <!-- O conteúdo vai ser inserido aqui pelo JavaScript -->
+        </div>
+    </div>
+</div>
 
 <!-- EMAILJS -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
