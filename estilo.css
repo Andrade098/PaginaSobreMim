@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -27,14 +27,17 @@ header {
 
 .logo {
     color: #0ef;
-    font-weight: bold;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 2px;
 }
 
 .navbar a {
     color: #fff;
-    margin-left: 25px;
+    margin-left: 30px;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
     transition: 0.3s;
 }
 
@@ -49,73 +52,160 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
+}
+
+.home-content {
+    flex: 1;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #0ef;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.nome {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 15px;
 }
 
 .nome span {
     color: #0ef;
-    font-style: italic;
 }
 
-.home-img img {
-    width: 320px;
-    border-radius: 20px;
-    border: 2px solid #0ef;
+.descricao {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #ccc;
+    max-width: 500px;
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
-/* SOCIAL */
+/* BOTÕES SOCIAIS - NOVO FORMATO */
 .social-media {
     display: flex;
-    gap: 15px;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
 }
 
-.social-media a {
-    display: flex;
-    justify-content: center;
+.social-btn {
+    display: inline-flex;
     align-items: center;
-    width: 45px;
-    height: 45px;
+    gap: 10px;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.05);
     border: 2px solid #0ef;
-    border-radius: 50%;
+    border-radius: 8px;
     color: #0ef;
-    font-size: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
     transition: 0.3s;
 }
 
-.social-media a:hover {
-    background: #0ef;
-    color: #1f242d;
+.social-btn i {
+    font-size: 24px;
 }
 
-/* BOTÃO */
+.social-btn:hover {
+    background: #0ef;
+    color: #1f242d;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 238, 255, 0.2);
+}
+
+/* BOTÕES DE AÇÃO */
+.botoes-acoes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 28px;
+    padding: 14px 32px;
     background: #0ef;
-    border-radius: 30px;
+    border-radius: 8px;
     color: #000;
     text-decoration: none;
     font-weight: 600;
+    font-size: 16px;
     transition: 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
-    box-shadow: 0 0 15px #0ef;
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-curriculo {
+    background: #0ef;
+    color: #000;
 }
 
 /* SCROLL TEXT */
 .scroll-text {
-    margin-top: 30px;
     font-size: 14px;
-    opacity: 0.7;
+    opacity: 0.6;
     animation: bounce 1.5s infinite;
+    font-weight: 300;
 }
 
 @keyframes bounce {
     0%,100% { transform: translateY(0); }
     50% { transform: translateY(10px); }
+}
+
+/* FOTO E INFORMAÇÕES ACADÊMICAS */
+.home-img {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.home-img img {
+    width: 320px;
+    border-radius: 20px;
+    border: 3px solid #0ef;
+    box-shadow: 0 0 40px rgba(0, 238, 255, 0.15);
+}
+
+.info-academica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-top: 5px;
+}
+
+.badge-formado {
+    background: rgba(0, 238, 255, 0.15);
+    border: 1px solid #0ef;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0ef;
+    letter-spacing: 0.5px;
+}
+
+.badge-universidade {
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 /* SEÇÕES */
@@ -126,12 +216,24 @@ section {
 
 .heading {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 50px;
 }
 
 .heading span {
     color: #0ef;
+}
+
+/* SOBRE */
+#sobre p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+    font-weight: 300;
 }
 
 /* TECNOLOGIAS */
@@ -144,18 +246,21 @@ section {
 
 .tech-card {
     background: #323946;
-    padding: 20px 30px;
+    padding: 18px 35px;
     border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
     transition: 0.3s;
+    border: 1px solid transparent;
 }
 
 .tech-card:hover {
-    box-shadow: 0 0 15px #0ef;
+    border-color: #0ef;
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.1);
+    transform: translateY(-3px);
 }
 
-/* ============================================ */
-/* PROJETOS - SOMENTE ESSA PARTE FOI ALTERADA */
-/* ============================================ */
+/* PROJETOS */
 .projetos-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -171,10 +276,9 @@ section {
 
 .projeto-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 238, 255, 0.15);
+    box-shadow: 0 8px 30px rgba(0, 238, 255, 0.12);
 }
 
-/* IMAGEM DO PROJETO */
 .projeto-imagem {
     position: relative;
     overflow: hidden;
@@ -194,7 +298,6 @@ section {
     transform: scale(1.05);
 }
 
-/* BADGES */
 .badge-solo,
 .badge-equipe {
     position: absolute;
@@ -217,25 +320,25 @@ section {
     color: #000;
 }
 
-/* INFORMAÇÕES DO PROJETO */
 .projeto-info {
     padding: 20px;
 }
 
 .projeto-info h3 {
     color: #0ef;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
     margin-bottom: 8px;
 }
 
 .descricao-curta {
     color: #ccc;
     font-size: 0.95rem;
-    line-height: 1.4;
+    line-height: 1.5;
     margin-bottom: 12px;
+    font-weight: 300;
 }
 
-/* TAGS DE TECNOLOGIA */
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
@@ -249,10 +352,10 @@ section {
     padding: 3px 12px;
     border-radius: 12px;
     font-size: 12px;
-    border: 1px solid rgba(0, 238, 255, 0.3);
+    font-weight: 500;
+    border: 1px solid rgba(0, 238, 255, 0.2);
 }
 
-/* CONTRIBUIÇÃO (SÓ APARECE NO VETFARM) */
 .contribuicao {
     margin-bottom: 12px;
     padding: 8px 12px;
@@ -265,9 +368,9 @@ section {
 
 .contribuicao strong {
     color: #fff;
+    font-weight: 600;
 }
 
-/* BOTÕES DOS PROJETOS */
 .botoes-projeto {
     display: flex;
     flex-wrap: wrap;
@@ -279,12 +382,13 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    padding: 5px 14px;
+    padding: 6px 16px;
     background: transparent;
     border: 1.5px solid #0ef;
-    border-radius: 20px;
+    border-radius: 6px;
     color: #0ef;
     font-size: 13px;
+    font-weight: 500;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -292,12 +396,8 @@ section {
 .btn-projeto:hover {
     background: #0ef;
     color: #1f242d;
-    box-shadow: 0 0 12px rgba(0, 238, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 238, 255, 0.2);
 }
-
-/* ============================================ */
-/* FIM DAS ALTERAÇÕES DOS PROJETOS */
-/* ============================================ */
 
 /* FORM */
 form {
@@ -309,7 +409,98 @@ form {
 }
 
 input, textarea {
-    padding: 12px;
+    padding: 14px 18px;
     border-radius: 8px;
     border: none;
+    background: #323946;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #888;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form .btn {
+    background: #0ef;
+    color: #000;
+    font-weight: 600;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form .btn:hover {
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.3);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 5% 80px;
+    }
+
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricao {
+        max-width: 100%;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .botoes-acoes {
+        justify-content: center;
+    }
+
+    .home-img img {
+        width: 250px;
+    }
+
+    .nome {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+
+    .nome {
+        font-size: 2.8rem;
+    }
+
+    .social-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .home-img img {
+        width: 200px;
+    }
+
+    .heading {
+        font-size: 2.2rem;
+    }
+
+    .projetos-container {
+        grid-template-columns: 1fr;
+    }
 }
