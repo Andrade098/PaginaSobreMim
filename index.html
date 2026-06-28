@@ -1,65 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu currículo</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfólio | Lucas Andrade</title>
+
+    <!-- ICONES -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
-    
-        <header>
-            <a href="#" class="logo">Portfolio</a>
-            <nav class="navbar">
-                <a href="#" style="--i:1"
-                class="active">Início</a>
-              
-                
-            </nav>
-        </header>
-        
-        <section class="home">
-            <div class="home-content"><br><br><br><br><br><br>
-                <h3>Olá, meu nome é</h3><br>
-                <h1>Lucas Andrade</h1><br>
-                <h3>Especializações em <span class="multiple-text"> Administrador de Banco de Dados </span></h3><br>
-                <p> O segredo para o sucesso é sempre 
-                    escutar o que o cliente deseja. Satisfazendo
-                    assim, os desejos que ele almeja. </p>
-                <div class="social-media">
-                    <a href="https://www.instagram.com/_.lucasandrade._/" style="--i:7"><i class='bx bxl-instagram-alt'></i></a>
-                    <a href="https://github.com/Andrade098?tab=repositories" style="--i:8"><i class='bx bxl-github'></i></a>
-                    
-                    <a href="https://www.linkedin.com/in/lucas-andrade-b18556261/" style="--i:10"><i class='bx bxl-linkedin-square' ></i></a>
-                </div>
-                <a href="https://www.canva.com/design/DAGVoI1wdsE/wXoi77c9bbwI9_f1S3Pb-g/edit" class="btn">Ver Currículo</a>
-                </div>
 
-            <div class="home-img">
-                <img src="Design sem nome.png" alt="">
+<header>
+    <a href="#" class="logo">L.A</a>
+
+    <nav class="navbar">
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Olá, meu nome é</h3>
+
+        <h1 class="nome">
+            Lucas <span>Andrade</span>
+        </h1>
+
+        <h3>Especializações em <span class="multiple-text"></span></h3>
+
+        <p>
+            Desenvolvedor focado em criar soluções modernas e funcionais.
+        </p>
+
+        <div class="social-media">
+            <a href="https://www.instagram.com/_.lucasandrade._/" target="_blank">
+                <i class='bx bxl-instagram-alt'></i>
+            </a>
+
+            <a href="https://github.com/Andrade098" target="_blank">
+                <i class='bx bxl-github'></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/lucas-andrade-b18556261/" target="_blank">
+                <i class='bx bxl-linkedin-square'></i>
+            </a>
+        </div>
+
+        <a href="https://www.canva.com/design/DAGVoI1wdsE/wXoi77c9bbwI9_f1S3Pb-g/edit" target="_blank" class="btn">
+            Ver Currículo
+        </a>
+
+        <p class="scroll-text">↓ scroll para explorar</p>
+    </div>
+
+    <div class="home-img">
+        <img src="Lucas.png" alt="Foto do Lucas">
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+    <h2 class="heading">Sobre <span>Mim</span></h2>
+    <p>
+        Olá! Me chamo Lucas, tenho 22 anos e estou em busca de uma oportunidade nas áreas de Tecnologia e Administração. Sou bom em gerenciamento de projetos, análise de dados e planejamento estratégico, áreas que tenho aprofundado durante meu curso de Engenharia de Software.
+    </p>
+</section>
+
+<!-- TECNOLOGIAS -->
+<section id="tecnologias">
+    <h2 class="heading">Minhas <span>Tecnologias</span></h2>
+
+    <div class="tech-container">
+        <div class="tech-card">HTML</div>
+        <div class="tech-card">JavaScript</div>
+        <div class="tech-card">Python</div>
+        <div class="tech-card">MySQL</div>
+        <div class="tech-card">Node.js</div>
+        <div class="tech-card">React.js</div>
+        <div class="tech-card">Java</div>
+    </div>
+</section>
+
+<!-- PROJETOS -->
+<section id="projetos">
+    <h2 class="heading">Meus <span>Projetos</span></h2>
+
+    <div class="projetos-container">
+        <!-- PROJETO 1 - SISTEMA BANCÁRIO -->
+        <div class="projeto-card">
+            <div class="projeto-imagem">
+                <img src="img/tela1.png" alt="Sistema Bancário rodando">
+                <span class="badge-solo">🧑‍💻 Projeto solo</span>
             </div>
-
-        </section>
-
-       
-
-         
-
-        <!--Sessao de design-->
-       
-
-
-
+            <div class="projeto-info">
+                <h3>Sistema Bancário</h3>
+                <p class="descricao-curta">Sistema completo com funcionalidades de criar conta, saque, depósito, transferência e listar contas.</p>
+                
+                <div class="tech-tags">
+                    <span>Java</span>
                 </div>
-            </div>   
+                
+                <div class="botoes-projeto">
+                    <a href="https://github.com/Andrade098/ProjetoBanco.Java" class="btn-projeto" target="_blank">
+                        <i class='bx bxl-github'></i> Código
+                    </a>
+                    <a href="#" class="btn-projeto" target="_blank">
+                        <i class='bx bx-link-external'></i> Demo
+                    </a>
+                </div>
+            </div>
+        </div>
 
+        <!-- PROJETO 2 - VETFARM -->
+        <div class="projeto-card">
+            <div class="projeto-imagem">
+                <img src="img/imagem.png" alt="VetFarm rodando">
+                <span class="badge-equipe">👥 Projeto em equipe</span>
+            </div>
+            <div class="projeto-info">
+                <h3>VetFarm</h3>
+                <p class="descricao-curta">Marketplace digital de um site que conecta produtores rurais a fornecedores de insumos veterinários.</p>
+                
+                <div class="tech-tags">
+                    <span>React Native</span>
+                    <span>TypeScript</span>
+                    <span>PostgreSQL</span>
+                    <span>Node.js</span>
+                </div>
+                
+                <div class="contribuicao">
+                    <small>👤 <strong>Minha contribuição:</strong> Modelagem do banco de dados e integração com a API</small>
+                </div>
+                
+                <div class="botoes-projeto">
+                    <a href="https://github.com/Andrade098/app-vetfarm" class="btn-projeto" target="_blank">
+                        <i class='bx bxl-github'></i> Código
+                    </a>
+                    <a href="documentacao-vetfarm.pdf" class="btn-projeto" target="_blank">
+                        <i class='bx bx-file'></i> Documentação
+                    </a>
+                    <a href="#" class="btn-projeto" target="_blank">
+                        <i class='bx bx-link-external'></i> Demo
+                    </a>
+                </div>
+            </div>
+        </div>
 
-        </section>
-            
+        <!-- PROJETO 3 - SITE INSTITUCIONAL -->
+        <div class="projeto-card">
+            <div class="projeto-imagem">
+                <img src="img/imagem.png" alt="Site Institucional">
+                <span class="badge-solo">🧑‍💻 Projeto solo</span>
+            </div>
+            <div class="projeto-info">
+                <h3>PitWall - Formula 1</h3>
+                <p class="descricao-curta">Plataforma de monitoramento em tempo real para corridas de Fórmula 1, inspirada no Live Timing do F1TV. Simula dados de corrida com WebSockets, exibindo posições, gaps, pneus, eventos e classificação em tempo real.
 
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        <script src="script.js"></script>
+</p>
+                
+                <div class="tech-tags">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>Docker</span>
+                    <span>PostgreSQL</span>
+                    <span>React</span>
+                </div>
+                
+                <div class="botoes-projeto">
+                    <a href="#" class="btn-projeto" target="_blank">
+                        <i class='bx bxl-github'></i> Código
+                    </a>
+                    <a href="#" class="btn-projeto" target="_blank">
+                        <i class='bx bx-link-external'></i> Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+    <h2 class="heading">Entre em <span>Contato</span></h2>
+
+    <form id="form-contato">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu email" required>
+        <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+</section>
+
+<!-- EMAILJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- TYPED -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
 </body>
 </html>
