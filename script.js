@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p><strong> Sobre o projeto:</strong></p>
                 <p>Sistema desenvolvido em Java para gerenciar contas bancárias com funcionalidades completas. O projeto foi criado como parte do aprendizado de Programação Orientada a Objetos e simula operações básicas de um banco.</p>
                 
-                <p><strong>⚙️ Funcionalidades:</strong></p>
+                <p><strong> Funcionalidades:</strong></p>
                 <ul>
                     <li> Criar nova conta</li>
                     <li> Realizar saque com validação de saldo e limite</li>
