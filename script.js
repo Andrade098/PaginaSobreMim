@@ -1,49 +1,77 @@
-// EMAILJS INIT
-(function(){
-    emailjs.init("JT-L09nMHj5xcQ9xI");
-})();
-
-// TEXTO ANIMADO
-var typed = new Typed(".multiple-text", {
-    strings: ["Engenharia de Software", "Adm de Banco de Dados", "Desenvolvimento web"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
-
-// FORMULÁRIO
-document.getElementById("form-contato").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    emailjs.send("gmail_lucas", "template_av0dq84", {
-        nome: document.getElementById("nome").value,
-        email: document.getElementById("email").value,
-        mensagem: document.getElementById("mensagem").value
-    })
-    .then(function() {
-        alert("Mensagem enviada com sucesso!");
-        document.getElementById("form-contato").reset();
-    }, function(error) {
-        alert("Erro ao enviar: " + JSON.stringify(error));
-    });
-});
-
 // ==========================================
-// MODAL - SAIBA MAIS (CORRIGIDO)
+// SCRIPT.JS - VERSÃO CORRIGIDA
 // ==========================================
 
-// Aguarda o DOM carregar completamente
+// Aguarda o DOM carregar completamente antes de executar qualquer coisa
 document.addEventListener("DOMContentLoaded", function() {
 
+    // ==========================================
+    // EMAILJS INIT
+    // ==========================================
+    (function(){
+        emailjs.init("JT-L09nMHj5xcQ9xI");
+    })();
+
+    // ==========================================
+    // TEXTO ANIMADO - Verifica se o elemento existe
+    // ==========================================
+    var multipleTextElement = document.querySelector(".multiple-text");
+    if (multipleTextElement) {
+        var typed = new Typed(".multiple-text", {
+            strings: ["Engenharia de Software", "Adm de Banco de Dados", "Desenvolvimento web"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+        console.log("✅ Texto animado iniciado!");
+    } else {
+        console.warn("⚠️ Elemento .multiple-text não encontrado. O texto animado não será exibido.");
+    }
+
+    // ==========================================
+    // FORMULÁRIO - Verifica se o formulário existe
+    // ==========================================
+    var formContato = document.getElementById("form-contato");
+    if (formContato) {
+        formContato.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            emailjs.send("gmail_lucas", "template_av0dq84", {
+                nome: document.getElementById("nome").value,
+                email: document.getElementById("email").value,
+                mensagem: document.getElementById("mensagem").value
+            })
+            .then(function() {
+                alert("Mensagem enviada com sucesso!");
+                document.getElementById("form-contato").reset();
+            }, function(error) {
+                alert("Erro ao enviar: " + JSON.stringify(error));
+            });
+        });
+        console.log("✅ Formulário de contato configurado!");
+    } else {
+        console.warn("⚠️ Formulário #form-contato não encontrado.");
+    }
+
+    // ==========================================
+    // MODAL - SAIBA MAIS
+    // ==========================================
+
     // Pegando os elementos do DOM
-    const modal = document.getElementById("modal-projeto");
-    const modalTitulo = document.getElementById("modal-titulo");
-    const modalCorpo = document.getElementById("modal-corpo");
-    const fecharModal = document.querySelector(".modal-fechar");
+    var modal = document.getElementById("modal-projeto");
+    var modalTitulo = document.getElementById("modal-titulo");
+    var modalCorpo = document.getElementById("modal-corpo");
+    var fecharModal = document.querySelector(".modal-fechar");
+
+    // Verifica se o modal existe
+    if (!modal) {
+        console.error("❌ Modal #modal-projeto não encontrado. Verifique se a div do modal está no HTML.");
+        return;
+    }
 
     // Dados detalhados de cada projeto
-    const projetosDetalhes = {
+    var projetosDetalhes = {
         "sistema-bancario": {
             titulo: "🏦 Sistema Bancário",
             corpo: `
@@ -155,30 +183,38 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Função para abrir o modal
     function abrirModal(projetoId) {
-        const dados = projetosDetalhes[projetoId];
-        if (!dados) return;
+        var dados = projetosDetalhes[projetoId];
+        if (!dados) {
+            alert("Projeto não encontrado!");
+            return;
+        }
         
         modalTitulo.textContent = dados.titulo;
         modalCorpo.innerHTML = dados.corpo;
         modal.style.display = "block";
         document.body.style.overflow = "hidden";
+        console.log("✅ Modal aberto:", projetoId);
     }
 
     // Função para fechar o modal
     function fecharModalFunc() {
         modal.style.display = "none";
         document.body.style.overflow = "auto";
+        console.log("✅ Modal fechado");
     }
 
-    // Evento para os botões "Saiba Mais"
-    document.querySelectorAll(".btn-saiba-mais").forEach(function(botao) {
-        botao.addEventListener("click", function(event) {
+    // Adicionar evento a todos os botões "Saiba Mais"
+    var botoes = document.querySelectorAll(".btn-saiba-mais");
+    console.log("🔍 Botões 'Saiba Mais' encontrados:", botoes.length);
+
+    for (var i = 0; i < botoes.length; i++) {
+        botoes[i].addEventListener("click", function(event) {
             event.preventDefault();
-            event.stopPropagation();
-            const projetoId = this.getAttribute("data-projeto");
+            var projetoId = this.getAttribute("data-projeto");
+            console.log("🖱️ Clique no botão:", projetoId);
             abrirModal(projetoId);
         });
-    });
+    }
 
     // Fechar modal ao clicar no X
     if (fecharModal) {
@@ -198,5 +234,7 @@ document.addEventListener("DOMContentLoaded", function() {
             fecharModalFunc();
         }
     });
+
+    console.log("✅ script.js carregado com sucesso!");
 
 }); // Fim do DOMContentLoaded
