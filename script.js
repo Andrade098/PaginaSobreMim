@@ -75,31 +75,29 @@ document.addEventListener("DOMContentLoaded", function() {
         "sistema-bancario": {
             titulo: "🏦 Sistema Bancário",
             corpo: `
-                <p><strong>📌 Sobre o projeto:</strong></p>
+                <p><strong> Sobre o projeto:</strong></p>
                 <p>Sistema desenvolvido em Java para gerenciar contas bancárias com funcionalidades completas. O projeto foi criado como parte do aprendizado de Programação Orientada a Objetos e simula operações básicas de um banco.</p>
                 
                 <p><strong>⚙️ Funcionalidades:</strong></p>
                 <ul>
-                    <li>✅ Criar nova conta</li>
-                    <li>✅ Realizar saque com validação de saldo e limite</li>
-                    <li>✅ Realizar depósito</li>
-                    <li>✅ Transferência entre contas</li>
-                    <li>✅ Listar todas as contas cadastradas</li>
+                    <li> Criar nova conta</li>
+                    <li> Realizar saque com validação de saldo e limite</li>
+                    <li> Realizar depósito</li>
+                    <li> Transferência entre contas</li>
+                    <li> Listar todas as contas cadastradas</li>
                 </ul>
                 
-                <p><strong>🛠️ Tecnologias utilizadas:</strong></p>
+                <p><strong>Tecnologias utilizadas:</strong></p>
                 <div>
                     <span class="tech-destaque">Java</span>
-                    <span class="tech-destaque">POO</span>
-                    <span class="tech-destaque">Collections</span>
-                    <span class="tech-destaque">Scanner</span>
+                
                 </div>
                 
-                <p><strong>📊 Desafios e aprendizados:</strong></p>
+                <p><strong> Desafios e aprendizados:</strong></p>
                 <ul>
-                    <li>🧠 Implementação de validações de saldo e limites</li>
-                    <li>🧠 Estruturação de um sistema orientado a objetos com classes bem definidas</li>
-                    <li>🧠 Gerenciamento de dados em memória com Collections</li>
+                    <li> Implementação de validações de saldo e limites</li>
+                    <li> Estruturação de um sistema orientado a objetos com classes bem definidas</li>
+                    <li> Gerenciamento de dados em memória com Collections</li>
                 </ul>
                 
                 <p><strong>👨‍💻 Projeto solo</strong></p>
@@ -110,33 +108,32 @@ document.addEventListener("DOMContentLoaded", function() {
         "vetfarm": {
             titulo: "🐄 VetFarm",
             corpo: `
-                <p><strong>📌 Sobre o projeto:</strong></p>
+                <p><strong> Sobre o projeto:</strong></p>
                 <p>A VetFarm é um marketplace digital que conecta produtores rurais a fornecedores de insumos veterinários. A plataforma foi desenvolvida para facilitar o acesso a produtos essenciais em regiões rurais, oferecendo catálogo, pagamentos digitais e logística adaptada.</p>
                 
-                <p><strong>⚙️ Funcionalidades:</strong></p>
+                <p><strong> Funcionalidades:</strong></p>
                 <ul>
-                    <li>✅ Catálogo de produtos veterinários</li>
-                    <li>✅ Sistema de pagamentos digitais</li>
-                    <li>✅ Logística de entrega adaptada ao campo</li>
-                    <li>✅ Conexão entre produtores e fornecedores</li>
+                    <li> Catálogo de produtos veterinários</li>
+                    <li> Sistema de pagamentos digitais</li>
+                    <li> Logística de entrega adaptada ao campo</li>
+                    <li> Conexão entre produtores e fornecedores</li>
                 </ul>
                 
-                <p><strong>🛠️ Tecnologias utilizadas:</strong></p>
+                <p><strong> Tecnologias utilizadas:</strong></p>
                 <div>
                     <span class="tech-destaque">SQL</span>
                     <span class="tech-destaque">Java</span>
                     <span class="tech-destaque">React</span>
-                    <span class="tech-destaque">Spring Boot</span>
                 </div>
                 
                 <p><strong>👥 Trabalho em equipe:</strong></p>
                 <p>👤 <strong>Minha contribuição:</strong> Modelagem do banco de dados e integração com a API.</p>
                 
-                <p><strong>📊 Desafios e aprendizados:</strong></p>
+                <p><strong> Desafios e aprendizados:</strong></p>
                 <ul>
-                    <li>🧠 Modelagem de banco de dados para um marketplace complexo</li>
-                    <li>🧠 Integração entre back-end (Java/Spring) e front-end (React)</li>
-                    <li>🧠 Trabalho em equipe utilizando metodologias ágeis</li>
+                    <li> Modelagem de banco de dados para um marketplace complexo</li>
+                    <li> Integração entre back-end (Java/Spring) e front-end (React)</li>
+                    <li> Trabalho em equipe utilizando metodologias ágeis</li>
                 </ul>
                 
                 <p style="color: #0ef; margin-top: 10px;">📄 <a href="https://docs.google.com/document/d/1VqK-bWwCaIc7R8Jrrp1W6yxiFBseVLPEtXyoUJnFitY/edit?usp=sharing" target="_blank" style="color: #0ef;">Ver documentação completa</a></p>
@@ -147,19 +144,19 @@ document.addEventListener("DOMContentLoaded", function() {
         "pitwall": {
             titulo: "🏎️ PitWall - Fórmula 1",
             corpo: `
-                <p><strong>📌 Sobre o projeto:</strong></p>
+                <p><strong> Sobre o projeto:</strong></p>
                 <p>Plataforma de monitoramento em tempo real para corridas de Fórmula 1, inspirada no Live Timing do F1TV. O projeto simula dados de corrida com WebSockets, exibindo posições, gaps, pneus, eventos e classificação em tempo real.</p>
                 
-                <p><strong>⚙️ Funcionalidades:</strong></p>
+                <p><strong> Funcionalidades:</strong></p>
                 <ul>
-                    <li>✅ Simulação de dados de corrida em tempo real</li>
-                    <li>✅ Posicionamento dos pilotos com gaps</li>
-                    <li>✅ Informações de pneus e estratégias</li>
-                    <li>✅ Eventos da corrida (ultrapassagens, pit stops, etc.)</li>
-                    <li>✅ Classificação final em tempo real</li>
+                    <li> Simulação de dados de corrida em tempo real</li>
+                    <li> Posicionamento dos pilotos com gaps</li>
+                    <li> Informações de pneus e estratégias</li>
+                    <li> Eventos da corrida (ultrapassagens, pit stops, etc.)</li>
+                    <li> Classificação final em tempo real</li>
                 </ul>
                 
-                <p><strong>🛠️ Tecnologias utilizadas:</strong></p>
+                <p><strong> Tecnologias utilizadas:</strong></p>
                 <div>
                     <span class="tech-destaque">HTML</span>
                     <span class="tech-destaque">CSS</span>
@@ -168,11 +165,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     <span class="tech-destaque">Node.js</span>
                 </div>
                 
-                <p><strong>📊 Desafios e aprendizados:</strong></p>
+                <p><strong> Desafios e aprendizados:</strong></p>
                 <ul>
-                    <li>🧠 Implementação de comunicação em tempo real com WebSockets</li>
-                    <li>🧠 Simulação de dados dinâmicos para corridas</li>
-                    <li>🧠 Criação de uma interface responsiva e imersiva para fãs de F1</li>
+                    <li> Implementação de comunicação em tempo real com WebSockets</li>
+                    <li> Simulação de dados dinâmicos para corridas</li>
+                    <li> Criação de uma interface responsiva e imersiva para fãs de F1</li>
                 </ul>
                 
                 <p><strong>👨‍💻 Projeto solo</strong></p>
